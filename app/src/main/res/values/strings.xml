@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Sweater Weather</string>
     <string name="product_id_hint">Enter the product\'s id</string>
+    <string name="open_weather_key">61d4217a1cf164674df0b8e4dfd8f078</string>
 </resources>
