@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Sweater Weather</string>
+    <string name="product_id_hint">Enter the product\'s id</string>
+</resources>
