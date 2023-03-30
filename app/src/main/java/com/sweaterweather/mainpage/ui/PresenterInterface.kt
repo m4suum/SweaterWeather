@@ -1,5 +1,5 @@
 package com.sweaterweather.mainpage.ui
 
 interface PresenterInterface {
-    fun getCityWeather()
+    fun getCityWeather(cityName:String)
 }

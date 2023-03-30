@@ -8,16 +8,16 @@
     tools:context=".mainpage.ui.MainActivity">
 
     <EditText
-        android:id="@+id/etEnterCity"
+        android:id="@+id/editTextEnterCity"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:autofillHints="moscow"
         android:background="@drawable/et_search"
         android:gravity="center"
         android:hint="@string/city_name_hint"
         android:inputType="text"
+        android:paddingVertical="8dp"
         android:textColor="@color/grey"
         android:textColorHint="@color/light_grey"
         android:textSize="24sp"
@@ -27,23 +27,8 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="VisualLintTextFieldSize" />
 
-    <!--        <androidx.appcompat.widget.AppCompatButton-->
-    <!--            android:id="@+id/buttonGetTemperature"-->
-    <!--            android:layout_width="0dp"-->
-    <!--            android:layout_height="match_parent"-->
-    <!--            android:layout_gravity="center"-->
-    <!--            android:layout_margin="8dp"-->
-    <!--            android:layout_weight="0.3"-->
-    <!--            android:background="@drawable/button_search"-->
-    <!--            android:gravity="center"-->
-    <!--            android:text="@string/search"-->
-    <!--            android:textColor="@color/white"-->
-    <!--            android:textSize="24sp"-->
-    <!--            tools:ignore="VisualLintButtonSize" />-->
-
-
     <LinearLayout
-        android:id="@+id/llInfo"
+        android:id="@+id/linearLayoutInfo"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
@@ -51,10 +36,10 @@
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etEnterCity">
+        app:layout_constraintTop_toBottomOf="@id/editTextEnterCity">
 
         <TextView
-            android:id="@+id/tvCityName"
+            android:id="@+id/textViewCityName"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_gravity="center"
@@ -67,7 +52,7 @@
             android:textStyle="bold|italic" />
 
         <TextView
-            android:id="@+id/tvTemperature"
+            android:id="@+id/textViewTemperature"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_gravity="center"
@@ -79,7 +64,7 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/tvDescription"
+            android:id="@+id/textViewDescription"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_gravity="center"
@@ -91,5 +76,16 @@
             android:textStyle="bold" />
 
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
