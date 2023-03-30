@@ -1,4 +1,4 @@
-package com.sweaterweather.retrofit
+package com.sweaterweather.mainpage.api.models
 
 data class CityWeather(
     val coord: Coord?,

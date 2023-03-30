@@ -3,4 +3,5 @@
     <string name="city_name_hint">Enter the city\'s name</string>
     <string name="open_weather_key">61d4217a1cf164674df0b8e4dfd8f078</string>
     <string name="search">Найти</string>
+    <string name="celsius"> °C</string>
 </resources>

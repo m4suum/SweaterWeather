@@ -1,5 +1,6 @@
-package com.sweaterweather.retrofit
+package com.sweaterweather.mainpage.api
 
+import com.sweaterweather.mainpage.api.models.CityWeather
 import retrofit2.http.GET
 import retrofit2.http.Query
 
